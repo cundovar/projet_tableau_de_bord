@@ -1,11 +1,19 @@
-body {
-  background-color: black;
+.total {
+  display: grid;
+  background-color: gray;
+  grid-template-columns: 100px 1fr;
+  margin: 58px 20px 50px;
 }
 
-.testt {
-  width: 50px;
-  height: 50px;
-  background-color: aqua;
+.left_nav {
+  background-color: black;
+  color: antiquewhite;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=App.css.map */
