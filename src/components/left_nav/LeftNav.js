@@ -12,9 +12,12 @@ const LeftNav=()=>{
       ];
       const nav = nav_items.map((item, key) => {
         return (
+            <div className="text-center">
+
           <div key={key} >
-            <i> {item.name}</i>
+            <i className= {`text-center ${item.icon}` } ></i>
           </div>
+            </div>
         )
       })
 
