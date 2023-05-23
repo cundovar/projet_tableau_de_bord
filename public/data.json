@@ -35,7 +35,7 @@
       "performances_processus": {
         "processus_1": 90,
         "processus_2": 95,
-        "processus_3": 85
+        "processus_3": 45
       },
       "taux_rendement": 0.8,
       "défauts_qualité": 120,
@@ -49,6 +49,28 @@
       "satisfaction_employes": 4.5,
       "heures_supplémentaires": 200
     },
+
+    "visites_site":{
+      "type": "line_chart",
+      "title": "Évolution des visites quotidiennes",
+      "data": {
+        "labels": ["Jour 1", "Jour 2", "Jour 3", "Jour 4", "Jour 5", "Jour 6", "Jour 7"],
+        "datasets": [
+          {
+            "label": "Visites",
+            "data": [100, 80, 120, 90, 150, 130, 170],
+            "backgroundColor": "rgba(75,192,192,0.4)",
+            "borderColor": "rgba(75,192,192,1)",
+            "pointBackgroundColor": "rgba(75,192,192,1)",
+            "pointBorderColor": "#fff",
+            "pointHoverBackgroundColor": "#fff",
+            "pointHoverBorderColor": "rgba(75,192,192,1)"
+          }
+        ]
+      }
+    },
+
+    
     "donnees_projets": {
       "avancement_projets": {
         "projet_1": 0.6,
