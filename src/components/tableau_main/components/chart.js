@@ -29,7 +29,7 @@ const ChartComponent = () => {
   };
 
   return (
-    <div className='col-6' >
+    <div className='' >
       <Bar data={data} options={options} />
     </div>
   );

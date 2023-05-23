@@ -90,6 +90,36 @@
       "tâches_en_retard": 5,
       "problèmes_identifiés": 2,
       "risques_identifiés": 3
+    },
+    "carte":{
+      "type": "map",
+      "title": "Localisation des visites",
+      "data": [
+        {
+          "location": "Paris, France",
+          "visits": 120,
+          "lat": 48.8566,
+         " lng": 2.3522
+        },
+        {
+          "location": "New York, USA",
+          "visits": 80,
+          "lat": 40.7128,
+          "lng": -74.0060
+        },
+        {
+          "location": "Tokyo, Japan",
+          "visits": 200,
+          "lat": 35.6895,
+          "lng": 139.6917
+        },
+        {
+          "location": "Sao Paulo, Brazil",
+          "visits": 150,
+          "lat": -23.5505,
+          "lng": -46.6333
+        }
+      ]
     }
   }
   

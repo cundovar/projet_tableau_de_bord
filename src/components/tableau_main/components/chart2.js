@@ -13,7 +13,7 @@ const Chart2=()=>{
         fetch('./../data.json')
         .then((response)=>response.json())
         .then((data)=>{
-            console.log(data.donnees_production.performances_processus)
+     
             const productionData = {
                 labels: Object.keys(data.donnees_production.performances_processus),
                 datasets: [
@@ -32,13 +32,16 @@ const Chart2=()=>{
       .catch((error) => {
         console.error('Erreur lors de la récupération des données JSON:', error);
       });
-  }, [donneesProduction]);
+  }, []);
 
 
   return(
-    <div>
+    <div className="">
         <h3>graphique 2</h3>
+        <div>
       {  donneesProduction ? <Doughnut data={donneesProduction}/> : null }
+
+        </div>
     
     </div>
   )
