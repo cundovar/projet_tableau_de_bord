@@ -15,11 +15,11 @@ const Chart2=()=>{
         .then((data)=>{
      
             const productionData = {
-                labels: Object.keys(data.donnees_production.performances_processus),
+                labels: Object.keys(data.donnees_production),
                 datasets: [
                   {
-                    data: Object.values(data.donnees_production.performances_processus),
-                    backgroundColor: ['red', 'green', 'blue'], // Couleurs des secteurs
+                    data: Object.values(data.donnees_production),
+                    backgroundColor: ['red', 'green', 'blue','yellow','pink','black','violet'], // Couleurs des secteurs
                   },
                 ],
               };
