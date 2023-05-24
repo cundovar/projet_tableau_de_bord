@@ -31,12 +31,13 @@ const Chart4 = () => {
     <div>
       {donneesMap && <h3>{donneesMap.title} </h3>}
       <div className="row">
-        <div className="graphMiddle">
+        <div className="graphMiddle ">
           {donneesMapData ? (
             <GoogleMap
               mapContainerStyle={mapContainerStyle}
               center={center}
               zoom={2}
+              className="d-flex align-items-center"
             >
               {donneesMapData.map((item, index) => (
                 <Marker

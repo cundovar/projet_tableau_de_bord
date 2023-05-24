@@ -6,7 +6,7 @@ import Chart4 from "./components/chart4";
 const MainTableau = () => {
   return (
     <div>
-      <div className="row">
+      <div className="row d-flex flex-wrap ">
         <div className="graphMiddle">
           <h3>graphique</h3>
           <ChartComponent />
@@ -21,7 +21,7 @@ const MainTableau = () => {
       </div>
 
       <div>
-        <div>
+        <div className="">
           <Chart4 />
         </div>
       </div>

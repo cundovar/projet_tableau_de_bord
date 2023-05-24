@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, BarElement,LinearScale,CategoryScale,PointElement,LineElement } from "chart.js";
+import 'charts.css';
+
 
 import { Line } from 'react-chartjs-2';
 
@@ -21,6 +23,20 @@ useEffect(()=>{
       });
 },[])
 
+const lineOptions = {
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+    elements: {
+      line: {
+        borderColor: "red", // Changer la couleur de la ligne ici
+        borderCapStyle: "round", // Rendre la ligne arrondie
+      },
+    },
+  };
+
     return(
         <div>
            <h3>graphique 3</h3>
@@ -28,7 +44,13 @@ useEffect(()=>{
             <>
             <h6>{donneesSite.title} </h6>
  
-            <Line data={donneesSite.data} />
+            
+            <Line
+            data={donneesSite.data}
+            options={lineOptions}
+            className="chart charts-css line"
+          />
+           
             
             </>
            )}

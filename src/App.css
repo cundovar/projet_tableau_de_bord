@@ -15,6 +15,12 @@
   width: 50%;
 }
 
+#my-chart.line {
+  height: 200px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
