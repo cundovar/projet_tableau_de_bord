@@ -1,0 +1,24 @@
+{
+    "users": [
+      {
+        "name": "John Doe",
+        "country": "United States",
+        "photo": ""
+      },
+      {
+        "name": "Alice Smith",
+        "country": "Canada",
+        "photo": ""
+      },
+      {
+        "name": "Mohammed Rahman",
+        "country": "Bangladesh",
+        "photo": ""
+      },
+      {
+        "name": "Sophie Martin",
+        "country": "France",
+        "photo": ""
+      }
+    ]
+  }

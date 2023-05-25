@@ -28,12 +28,12 @@ const MainTableau = () => {
         </div>
       </div>
 
-      <div>
-        <div>
+      <div className="d-flex row">
+        <div className=" div_graph graphMiddle">
            <Table/>
         </div>
 
-        <div>
+        <div className="div_graph graphMiddle">
          <Users/>
         </div>
 

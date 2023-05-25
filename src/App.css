@@ -36,6 +36,18 @@
   height: 100% !important;
 }
 
+.photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px black solid;
+}
+
+.userDiv {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
 .icon {
   height: 50px;
   display: flex;
