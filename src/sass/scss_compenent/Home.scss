@@ -1,9 +1,10 @@
+@import './variable.scss';
 
 .total{
     display: grid;
    
     background-color: gray;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: $grid-template-columns;
     margin: 58px 20px 50px;
 
 }
@@ -13,10 +14,25 @@
     position: relative;
 }
 .graphMiddle{
-    width: 50%;
+    width: 48%;
+    margin: auto;
 }
 #my-chart.line {
     height: 200px;
     max-width: 400px;
     margin: 0 auto;
   }
+
+.div_graph{
+    border-radius: 20px;
+    background-color: antiquewhite;
+    margin: 0.5rem;
+}
+
+.chart1_2{
+    height: 30rem;
+}
+.chart1_2 div canvas{
+    height: 100% !important;
+
+}

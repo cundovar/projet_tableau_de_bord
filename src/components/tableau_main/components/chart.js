@@ -31,6 +31,7 @@ const ChartComponent = () => {
 
   return (
     <div className='' >
+      <h3>graphique</h3>
       <Bar data={data} options={options} />
     </div>
   );

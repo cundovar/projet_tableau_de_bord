@@ -1,0 +1,65 @@
+{
+    "plantes": [
+      {
+        "nom": "Rose",
+        "prix": 9.99,
+        "paiement": "payé",
+        "statut_livraison": "délivré"
+      },
+      {
+        "nom": "Lavande",
+        "prix": 14.99,
+        "paiement": "payé",
+        "statut_livraison": "en cours"
+      },
+      {
+        "nom": "Tulipe",
+        "prix": 7.99,
+        "paiement": "en cours",
+        "statut_livraison": "en cours"
+      },
+      {
+        "nom": "Orchidée",
+        "prix": 12.99,
+        "paiement": "payé",
+        "statut_livraison": "retour"
+      },
+      {
+        "nom": "Fougère",
+        "prix": 19.99,
+        "paiement": "payé",
+        "statut_livraison": "délivré"
+      },
+      {
+        "nom": "Hortensia",
+        "prix": 8.99,
+        "paiement": "en cours",
+        "statut_livraison": "en cours"
+      },
+      {
+        "nom": "Lys",
+        "prix": 11.99,
+        "paiement": "payé",
+        "statut_livraison": "délivré"
+      },
+      {
+        "nom": "Bégonia",
+        "prix": 16.99,
+        "paiement": "payé",
+        "statut_livraison": "en cours"
+      },
+      {
+        "nom": "Marguerite",
+        "prix": 6.99,
+        "paiement": "payé",
+        "statut_livraison": "retour"
+      },
+      {
+        "nom": "Dahlia",
+        "prix": 13.99,
+        "paiement": "en cours",
+        "statut_livraison": "délivré"
+      }
+    ]
+  }
+  

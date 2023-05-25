@@ -12,13 +12,38 @@
 }
 
 .graphMiddle {
-  width: 50%;
+  width: 48%;
+  margin: auto;
 }
 
 #my-chart.line {
   height: 200px;
   max-width: 400px;
   margin: 0 auto;
+}
+
+.div_graph {
+  border-radius: 20px;
+  background-color: antiquewhite;
+  margin: 0.5rem;
+}
+
+.chart1_2 {
+  height: 30rem;
+}
+
+.chart1_2 div canvas {
+  height: 100% !important;
+}
+
+.icon {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon:hover {
+  background-color: rgb(27, 76, 76);
 }
 
 * {
