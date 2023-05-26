@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .total {
   display: grid;
   background-color: gray;
@@ -29,11 +30,7 @@
 }
 
 .chart1_2 {
-  height: 30rem;
-}
-
-.chart1_2 div canvas {
-  height: 100% !important;
+  height: 20rem;
 }
 
 .photo {
@@ -46,6 +43,22 @@
 .userDiv {
   display: grid;
   grid-template-columns: 100px 1fr;
+}
+
+.chart-container {
+  max-height: 100%; /* Limite la hauteur maximale à 100% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  width: 100%;
+}
+
+.tableUser {
+  display: grid;
+  grid-template-columns: 60% 1fr;
 }
 
 .icon {

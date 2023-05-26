@@ -3,22 +3,22 @@
       {
         "name": "John Doe",
         "country": "United States",
-        "photo": ""
+        "photo": "images/1.jpg"
       },
       {
         "name": "Alice Smith",
         "country": "Canada",
-        "photo": ""
+        "photo": "images/2.jpg"
       },
       {
         "name": "Mohammed Rahman",
         "country": "Bangladesh",
-        "photo": ""
+        "photo": "images/3.jpg"
       },
       {
         "name": "Sophie Martin",
         "country": "France",
-        "photo": ""
+        "photo": "images/4.jpg"
       }
     ]
   }

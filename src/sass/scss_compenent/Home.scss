@@ -30,12 +30,9 @@
 }
 
 .chart1_2{
-    height: 30rem;
+    height:20rem;
 }
-.chart1_2 div canvas{
-    height: 100% !important;
 
-}
 .photo{
     width: 50px;
     height: 50px;
@@ -47,3 +44,19 @@
     grid-template-columns: $grid-template-columns;
 
 }
+
+.chart-container {
+
+    max-height: 100%; /* Limite la hauteur maximale à 100% */
+  
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+  }
+  table{
+    width: 100%;
+  }
+ .tableUser{
+    display: grid;
+    grid-template-columns: 60% 1fr;
+ }

@@ -34,12 +34,20 @@ const Chart2=()=>{
       });
   }, []);
 
+  const options = {
+    plugins: {
+      legend: {
+        position: 'right', // Place les légendes à droite du graphique
+      },
+    },
+  };
+
 
   return(
     <div className="">
         <h3>graphique 2</h3>
-        <div>
-      {  donneesProduction ? <Doughnut data={donneesProduction}/> : null }
+        <div className="chart-container">
+      {  donneesProduction ? <Doughnut data={donneesProduction} options={options} className=""/> : null }
 
         </div>
     

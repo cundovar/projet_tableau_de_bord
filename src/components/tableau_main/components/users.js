@@ -20,7 +20,7 @@ const Users = () => {
         donneesUsers.map((item, index) => (
           <div key={index} className=" row userDiv">
 
-             <div className="photo">{`${item.photo}`}</div>
+             <div className="photo"><img className="photo" src={`${item.photo}`} alt={item.nom}  /> </div>
                <div>
                <div className="" >{`${item.name}`}</div>
                <div className="" >{`${item.country}`}</div>

@@ -10,7 +10,6 @@ const MainTableau = () => {
     <div>
       <div className="row d-flex flex-wrap ">
         <div className="graphMiddle div_graph chart1_2">
-          
           <ChartComponent />
         </div>
         <div className="graphMiddle div_graph chart1_2">
@@ -28,17 +27,15 @@ const MainTableau = () => {
         </div>
       </div>
 
-      <div className="d-flex row">
-        <div className=" div_graph graphMiddle">
-           <Table/>
+      <div className="row tableUser">
+        <div className=" div_graph ">
+          <Table />
         </div>
 
-        <div className="div_graph graphMiddle">
-         <Users/>
+        <div className="div_graph ">
+          <Users />
         </div>
-
       </div>
-
     </div>
   );
 };
