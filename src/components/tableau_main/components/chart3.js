@@ -41,12 +41,14 @@ useEffect(()=>{
             <>
             <h6>{donneesSite.title} </h6>
  
-            
+            <div className="lineDiv">
+
             <Line
             data={donneesSite.data}
             options
             className="chart charts-css line"
           />
+            </div>
            
             
             </>

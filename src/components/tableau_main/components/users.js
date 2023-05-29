@@ -16,22 +16,29 @@ const Users = () => {
 
   return (
     <div className="">
+      <div>
+        <h3>Abonnés</h3>
+      </div>
+      <div className="margin_fix">
       {donneesUsers &&
         donneesUsers.map((item, index) => (
           <div key={index} className=" row userDiv">
-
-             <div className="photo"><img className="photo" src={`${item.photo}`} alt={item.nom}  /> </div>
-               <div>
-               <div className="" >{`${item.name}`}</div>
-               <div className="" >{`${item.country}`}</div>
-
-               </div>
-
-             <div>
-
+            <div className="d_flex align-item-center ">
+              <div className="photo">
+                <img
+                  className="photoUsers"
+                  src={`${item.photo}`}
+                  alt={item.nom}
+                />{" "}
+              </div>
+            </div>
+            <div className="">
+              <div className="">{`${item.name}`}</div>
+              <div className="">{`${item.country}`}</div>
             </div>
           </div>
         ))}
+    </div>
     </div>
   );
 };

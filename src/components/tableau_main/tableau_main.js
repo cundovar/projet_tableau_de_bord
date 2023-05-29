@@ -8,6 +8,11 @@ import Users from "./components/users";
 const MainTableau = () => {
   return (
     <div>
+      <div className="test">
+        <div className="div_graph">rrrggrr</div>
+        <div className="div_graph">hhh</div>
+        <div className="div_graph">hhggggeaaaa</div>
+      </div>
       <div className="row d-flex flex-wrap ">
         <div className="graphMiddle div_graph chart1_2">
           <ChartComponent />

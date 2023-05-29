@@ -6,3 +6,10 @@ $blue: rgb(164, 164, 234);
 $yellow: rgb(254, 254, 154);
 $red: rgb(241, 148, 148) ;
 $green: rgb(186, 237, 186); 
+
+:export {
+    blue:$blue;
+    yellow:$yellow;
+    red:$red;
+    green:$green
+}
