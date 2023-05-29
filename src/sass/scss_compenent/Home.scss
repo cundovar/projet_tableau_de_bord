@@ -72,15 +72,16 @@ p{
 .margin_fix{
     margin-right: .5rem;
 }
-td{
-   border-bottom: 1px solid green;
-}
+
 tbody tr td p{
     vertical-align: bottom;
 }
 
   table{
     width: 100%;
+    td{
+        border-bottom: 1px solid $green;
+     }
   }
  .tableUser{
     display: grid;
@@ -89,7 +90,7 @@ tbody tr td p{
  }
 
  .colorStatut{
-    padding: 0.5rem;
+    padding: 0.1rem;
     border-radius: 15px;
     vertical-align: bottom;
     max-width:50%;

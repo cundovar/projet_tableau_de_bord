@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { GoogleMap, Marker } from "@react-google-maps/api";
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 const Chart4 = () => {
   const [donneesMap, setDonneesMap] = useState(null);
@@ -19,38 +19,52 @@ const Chart4 = () => {
   }, []);
 
   const mapContainerStyle = {
-    width: "400px",
+    width: "400%",
     height: "400px",
   };
   const center = {
-    lat: 51.5074,
-    lng: -0.1278,
+    lat: 0,
+    lng: 0,
   };
+  const zoomLevel = 0;
 
   return (
     <div>
       {donneesMap && <h3>{donneesMap.title} </h3>}
       <div className="row">
-        <div className="graphMiddle ">
-          {donneesMapData ? (
-            <GoogleMap
-              mapContainerStyle={mapContainerStyle}
+        <div className="graphMiddle">
+        
+            <MapContainer
+              style={mapContainerStyle}
               center={center}
-              zoom={2}
+              zoom={zoomLevel}
               className="d-flex align-items-center"
+              maxBounds={[
+                [-90, -180],
+                [90, 180],
+              ]}
+              maxBoundsViscosity={1.0}
             >
-              {donneesMapData.map((item, index) => (
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+
+              {donneesMapData && donneesMapData.map((item, index) => (
                 <Marker
                   key={index}
                   position={{ lat: item.lat, lng: item.lng }}
-                  label={item.visits.toString()}
-                />
+                  label={item.visits}
+                >
+                  <Popup>
+                  A pretty CSS3 popup. <br /> Easily customizable.
+                  </Popup>
+                </Marker>
               ))}
-            </GoogleMap>
-          ) : (
-            <p>on cherche map loading</p>
-          )}
-          </div>
+            </MapContainer>
+        
+        </div>
+
         <div className="graphMiddle">
           {donneesMapData &&
             donneesMapData.map((item, index) => (

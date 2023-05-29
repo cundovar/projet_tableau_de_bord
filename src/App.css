@@ -80,16 +80,15 @@ p {
   margin-right: 0.5rem;
 }
 
-td {
-  border-bottom: 1px solid green;
-}
-
 tbody tr td p {
   vertical-align: bottom;
 }
 
 table {
   width: 100%;
+}
+table td {
+  border-bottom: 1px solid rgb(186, 237, 186);
 }
 
 .tableUser {
@@ -99,7 +98,7 @@ table {
 }
 
 .colorStatut {
-  padding: 0.5rem;
+  padding: 0.1rem;
   border-radius: 15px;
   vertical-align: bottom;
   max-width: 50%;
