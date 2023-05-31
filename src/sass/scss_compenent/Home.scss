@@ -5,18 +5,11 @@ p{
 .tableau_main{
     padding: .5rem;
 }
-.total{
-    display: grid;
-   
-    background-color: gray;
-    grid-template-columns: $grid-template-columns;
-    margin: 58px 20px 50px;
 
-}
 .left_nav{
     background-color: black;
     color: antiquewhite;
-    position: relative;
+  
 }
 .graphMiddle{
     width: 48%;
@@ -72,6 +65,10 @@ p{
 .margin_fix{
     margin-right: .5rem;
 }
+.carto{
+    width: 100%;
+    position: relative;
+}
 
 tbody tr td p{
     vertical-align: bottom;
@@ -102,4 +99,161 @@ max-width: 300%;
  //**********line
  .lineDiv{
     height: 20rem;
+ }
+
+
+
+ //*********responsive
+ @media screen and (min-width: 801px){
+  .headerNav{
+    display: none;
+  }
+
+    .total{
+      
+        display: grid;
+       
+        background-color: gray;
+        grid-template-columns: $grid-template-columns;
+        margin: 58px 20px 50px;
+    
+    }
+
+    .left_nav{
+        background-color: black;
+        color: antiquewhite;
+        position: relative;
+    }
+
+ }
+ @media screen and (max-width: 800px){
+
+    .total{
+        display: flex;
+    }
+    .tableau_main{
+        width: 100%;
+    }
+
+    .graphMiddle{
+        width: 90%;
+        height: auto;
+    }
+    .tableUser{
+        display: flex;
+    }
+    .users{
+        width: 90%;
+        margin: auto;
+    }
+
+  
+    .root{
+        width: 100%;
+    }
+    .total{
+        width: 100%;
+        padding: 0;
+        margin: 5rem 0 0 0;
+    }
+
+
+//menu burgur
+#menuContent.showMenu{
+    display: flex !important;
+ left: 0;
+ visibility: visible;
+ width: 70px;
+ justify-content: center;
+ border-radius: 15px;
+
+   
+  
+  }
+
+.left_nav{
+   visibility: hidden;
+    
+         left: -150px;
+        
+      
+      transition: left .5s ease; 
+
+      position:absolute;
+   
+   
+    
+     /*
+     
+     border: 1px solid red;
+     */  
+      height: 100vh;
+    // justify-content:center !important;
+    z-index: 99;
+       
+     }
+  
+   
+
+
+#burger1::before,
+#burger1::after {
+content:'';
+width:20px;
+/* margin-top: 1rem; */
+height:3px;
+background:rgb(169, 214, 19);
+display:inline-block;
+position:absolute;
+transform-origin: center;
+transition: all 0.3s ease;
+}
+#burger1::before {
+top:-7px;
+/* margin-bottom: 2rem;/ */
+margin-top: .1rem;
+}
+#burger1::after {
+top:7px;
+}
+#burger1.opene {
+
+}
+
+#burger1.opene::before {
+transform: rotate(45deg); 
+top:0;
+}
+#burger1.opene::after {
+transform: rotate(-45deg);
+top:0;
+}
+
+#link{
+display: flex;
+color: rgb(224, 20, 20);
+padding: 1rem;
+
+position: absolute;
+top: 0;
+
+margin-top: 1.2rem;
+margin-right:1rem ;
+z-index: 100;
+position: absolute;
+/*
+
+border: solid 1px greenyellow;
+*/ 
+
+}
+#burger1 {
+width:20px;
+margin-bottom: 1rem;
+height:3px;
+background:rgb(213, 55, 55);
+display:inline-block;
+position:relative;
+
+}
  }

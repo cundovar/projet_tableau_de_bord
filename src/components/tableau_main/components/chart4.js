@@ -19,8 +19,8 @@ const Chart4 = () => {
   }, []);
 
   const mapContainerStyle = {
-    width: "400%",
-    height: "400px",
+    width: "30px",
+    height: "30px",
   };
   const center = {
     lat: 0,
@@ -57,7 +57,7 @@ const Chart4 = () => {
                   label={item.visits}
                 >
                   <Popup>
-                  A pretty CSS3 popup. <br /> Easily customizable.
+              
                   </Popup>
                 </Marker>
               ))}

@@ -5,9 +5,17 @@ import Chart3 from "./components/chart3";
 import Chart4 from "./components/chart4";
 import Table from "./components/table";
 import Users from "./components/users";
+import Chart5 from "./components/chart5";
 const MainTableau = () => {
+ 
+
+
+
   return (
     <div>
+
+
+     
       <div className="test">
         <div className="div_graph">rrrggrr</div>
         <div className="div_graph">hhh</div>
@@ -28,7 +36,7 @@ const MainTableau = () => {
 
       <div>
         <div className="div_graph">
-          <Chart4 />
+       
         </div>
       </div>
 
@@ -37,10 +45,11 @@ const MainTableau = () => {
           <Table />
         </div>
 
-        <div className="div_graph ">
+        <div className="div_graph users ">
           <Users />
         </div>
       </div>
+     
     </div>
   );
 };
