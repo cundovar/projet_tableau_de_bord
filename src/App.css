@@ -15,7 +15,7 @@ p {
 }
 
 .left_nav {
-  background-color: black;
+  background-color: rgb(164, 164, 234);
   color: antiquewhite;
 }
 
@@ -156,8 +156,9 @@ table td {
     left: 0;
     visibility: visible;
     width: 70px;
+    height: 100%;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 0 15px 15px 0;
   }
   .left_nav {
     visibility: hidden;
@@ -177,7 +178,7 @@ table td {
     width: 20px;
     /* margin-top: 1rem; */
     height: 3px;
-    background: rgb(169, 214, 19);
+    background: rgb(214, 179, 133);
     display: inline-block;
     position: absolute;
     transform-origin: center;
@@ -186,10 +187,13 @@ table td {
   #burger1::before {
     top: -7px;
     /* margin-bottom: 2rem;/ */
-    margin-top: 0.1rem;
+    margin-top: 1px;
   }
   #burger1::after {
     top: 7px;
+  }
+  #burger1.opene {
+    background: transparent;
   }
   #burger1.opene::before {
     transform: rotate(45deg);
@@ -201,7 +205,7 @@ table td {
   }
   #link {
     display: flex;
-    color: rgb(224, 20, 20);
+    color: rgb(222, 50, 50);
     padding: 1rem;
     position: absolute;
     top: 0;
@@ -216,9 +220,9 @@ table td {
   }
   #burger1 {
     width: 20px;
-    margin-bottom: 1rem;
+    margin-top: 5px;
     height: 3px;
-    background: rgb(213, 55, 55);
+    background: rgb(212, 90, 14);
     display: inline-block;
     position: relative;
   }
@@ -243,7 +247,6 @@ table td {
 * {
   margin: 0;
   box-sizing: border-box;
-  border: 1px yellow solid;
 }
 
 /*# sourceMappingURL=App.css.map */
