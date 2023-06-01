@@ -13,14 +13,14 @@ const MainTableau = () => {
 
 
   return (
-    <div>
+    <div className="section">
 
 
    
       <div>
        <DivDebut/>
       </div>
-      <div className="row d-flex flex-wrap ">
+      <div className="row d-flex flex-wrap  justify-content-center align-items-center">
         <div className="graphMiddle div_graph chart1_2">
           <ChartComponent />
         </div>

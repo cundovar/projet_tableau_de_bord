@@ -33,7 +33,7 @@ const Users = () => {
               </div>
             </div>
             <div className="">
-              <div className="">{`${item.name}`}</div>
+              <div className="text-uppercase fw-bold">{`${item.name}`}</div>
               <div className="">{`${item.country}`}</div>
             </div>
           </div>

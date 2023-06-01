@@ -4,6 +4,12 @@
   yellow: rgb(254, 254, 154);
   red: rgb(241, 148, 148);
   green: rgb(186, 237, 186);
+  gray: rgb(134, 111, 111);
+}
+
+h3 {
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  color: rgb(134, 111, 111);
 }
 
 p {
@@ -12,12 +18,7 @@ p {
 
 .tableau_main {
   padding: 0.5rem;
-}
-
-.left_nav {
-  background-color: rgb(164, 164, 234);
-  color: antiquewhite;
-  border-radius: 0 15px 15px 0;
+  margin-left: 0.5rem;
 }
 
 .graphMiddle {
@@ -34,12 +35,12 @@ p {
 .div_graph {
   border-radius: 20px;
   background-color: antiquewhite;
-  margin: 0.5rem;
+  margin: 1rem 0.5rem 0 0;
   box-shadow: 8px 9px 12px 4px rgb(179, 184, 189);
 }
 
 .chart1_2 {
-  height: 20rem;
+  height: 22rem;
 }
 
 .photo {
@@ -64,10 +65,20 @@ p {
   align-items: center;
   justify-content: center;
 }
+.chart-container canvas {
+  width: 100%;
+}
+
+.div h3 {
+  margin-left: 0;
+  margin-bottom: 0;
+  color: rgb(164, 164, 234);
+  margin-bottom: 0.5rem;
+}
 
 .test {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media screen and (max-width: 800px) {
@@ -101,7 +112,7 @@ p {
   color: rgb(164, 164, 234);
 }
 .colorIcon i {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .colorText {
@@ -120,14 +131,11 @@ table td {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .photoUsers {
   max-width: 300%;
-}
-
-.margin_fix {
-  margin-right: 0.5rem;
 }
 
 .carto {
@@ -191,14 +199,23 @@ h2 {
   .headerNav {
     display: none;
   }
+  .userDiv {
+    margin-left: 1rem;
+  }
   .total {
     display: grid;
     grid-template-columns: 100px 1fr;
-    margin: 58px 20px 50px;
+    margin: 58px 0 50px 0;
   }
   .left_nav {
     color: antiquewhite;
     position: relative;
+  }
+  .margin_fix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 800px) {
@@ -216,7 +233,7 @@ h2 {
     display: flex;
   }
   .users {
-    width: 90%;
+    width: 95%;
     margin: auto;
   }
   .root {
@@ -226,6 +243,11 @@ h2 {
     width: 100%;
     padding: 0;
     margin: 5rem 0 0 0;
+  }
+  .userDiv {
+    margin: auto;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(186, 237, 186);
   }
   #menuContent.showMenu {
     display: flex !important;
@@ -240,7 +262,7 @@ h2 {
     visibility: hidden;
     left: -150px;
     transition: left 0.5s ease;
-    position: absolute;
+    position: fixed;
     /*
 
     border: 1px solid red;
@@ -307,6 +329,13 @@ h2 {
   yellow: rgb(254, 254, 154);
   red: rgb(241, 148, 148);
   green: rgb(186, 237, 186);
+  gray: rgb(134, 111, 111);
+}
+
+.left_nav {
+  background-color: rgb(164, 164, 234);
+  color: antiquewhite;
+  border-radius: 0 15px 15px 0;
 }
 
 .icon {
@@ -314,11 +343,42 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  z-index: 99;
 }
 .icon:hover {
-  background-color: rgb(27, 76, 76);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px 0 0 30px;
+  color: rgb(164, 164, 234);
 }
-
+.icon:hover::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px rgb(255, 255, 255);
+  pointer-events: none;
+}
+.icon:hover::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px white;
+  pointer-events: none;
+  z-index: 2;
+}
 * {
   margin: 0;
   box-sizing: border-box;

@@ -1,20 +1,24 @@
 @import './variable.scss';
+
+h3{
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    color: $gray;
+}
 p{
     margin: 0;
 }
 .tableau_main{
     padding: .5rem;
+    margin-left: .5rem;
+   
 }
 
-.left_nav{
-    background-color: $blue;
-    color: antiquewhite;
-    border-radius: 0 15px 15px 0;
-  
-}
+
+
 .graphMiddle{
     width: 48%;
     margin: auto;
+    
 }
 #my-chart.line {
     height: 200px;
@@ -25,12 +29,12 @@ p{
 .div_graph{
     border-radius: 20px;
     background-color: antiquewhite;
-    margin: 0.5rem;
+    margin: 1rem 0.5rem 0 0;
     box-shadow: 8px 9px 12px 4px rgb(179, 184, 189);
 }
 
 .chart1_2{
-    height:20rem;
+    height:22rem;
 }
 
 .photo{
@@ -57,15 +61,25 @@ p{
     display: flex;
     align-items: center;
     justify-content:center ;
+    canvas{
+        width: 100%;
+    }
 }
 
 
 
 
 //********divDebut
+.div h3{
+    margin-left: 0;
+    margin-bottom: 0;
+    color: $blue;
+    margin-bottom: .5rem;
+    
+}
 .test{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
 
 }
@@ -100,7 +114,7 @@ p{
     color:$blue;
 
     i{
-        font-size: 40px;
+        font-size: 50px;
     }
 
 }
@@ -119,6 +133,7 @@ p{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: .5rem;
+    margin-left: .5rem;
  }
 
 
@@ -127,7 +142,8 @@ max-width: 300%;
  }
 
  .margin_fix{
-    margin-right: .5rem;
+   
+   
 }
 .carto{
     width: 100%;
@@ -191,15 +207,20 @@ tbody tr td p{
 
  .userDiv{
     margin-bottom: 1rem;
- }
+}
 
 
 
- //*********responsive
- @media screen and (min-width: 801px){
-  .headerNav{
-    display: none;
+//*********responsive
+@media screen and (min-width: 801px){
+    .headerNav{
+        display: none;
+    }
+    .userDiv{
+      margin-left: 1rem;
+
   }
+
 
     .total{
       
@@ -207,7 +228,7 @@ tbody tr td p{
        
      
         grid-template-columns: $grid-template-columns;
-        margin: 58px 20px 50px;
+        margin: 58px 0 50px 0;
     
     }
 
@@ -215,6 +236,12 @@ tbody tr td p{
       
         color: antiquewhite;
         position: relative;
+    }
+    .margin_fix{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
  }
@@ -235,7 +262,7 @@ tbody tr td p{
         display: flex;
     }
     .users{
-        width: 90%;
+        width: 95%;
         margin: auto;
     }
 
@@ -248,6 +275,13 @@ tbody tr td p{
         padding: 0;
         margin: 5rem 0 0 0;
     }
+    .userDiv{
+        margin: auto;
+       
+        margin-bottom: 1rem;
+        border-bottom: 1px solid $green;
+    }
+   
 
 
 //menu burgur
@@ -272,7 +306,7 @@ tbody tr td p{
       
       transition: left .5s ease; 
 
-      position:absolute;
+      position:fixed;
    
    
     

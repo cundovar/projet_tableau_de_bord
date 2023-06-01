@@ -14,7 +14,7 @@ const LeftNav = () => {
     return (
       <div className="text-center">
         <div key={icon.id}>
-          <i className={`text-center icon ${icon.icon}`}></i>
+          <i className={`text-center icon iconBar ${icon.icon}`}></i>
         </div>
       </div>
     );
