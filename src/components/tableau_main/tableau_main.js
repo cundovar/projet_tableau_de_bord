@@ -6,6 +6,7 @@ import Chart4 from "./components/chart4";
 import Table from "./components/table";
 import Users from "./components/users";
 import Chart5 from "./components/chart5";
+import DivDebut from "./components/divDebut";
 const MainTableau = () => {
  
 
@@ -15,11 +16,9 @@ const MainTableau = () => {
     <div>
 
 
-     
-      <div className="test">
-        <div className="div_graph">rrrggrr</div>
-        <div className="div_graph">hhh</div>
-        <div className="div_graph">hhggggeaaaa</div>
+   
+      <div>
+       <DivDebut/>
       </div>
       <div className="row d-flex flex-wrap ">
         <div className="graphMiddle div_graph chart1_2">

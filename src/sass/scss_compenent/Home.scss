@@ -9,6 +9,7 @@ p{
 .left_nav{
     background-color: $blue;
     color: antiquewhite;
+    border-radius: 0 15px 15px 0;
   
 }
 .graphMiddle{
@@ -25,6 +26,7 @@ p{
     border-radius: 20px;
     background-color: antiquewhite;
     margin: 0.5rem;
+    box-shadow: 8px 9px 12px 4px rgb(179, 184, 189);
 }
 
 .chart1_2{
@@ -56,10 +58,6 @@ p{
     align-items: center;
     justify-content:center ;
 }
-.test{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
 //*******table
 .margin_fix{
@@ -74,6 +72,52 @@ tbody tr td p{
     vertical-align: bottom;
 }
 
+//********divDebut
+.test{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+@media screen and (max-width:800px) {
+    .test{
+        display: flex;
+        flex-direction: column;
+
+        .div_graph{
+            width: 95%;
+        }
+    }
+    .contentDebut{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+.contentDebut{
+    padding: 1.5rem;
+}
+.colorText,.colorIcon,.colorNumber{
+    width: 50%;
+}
+.colorText,.colorNumber{
+    height: 50%;
+}
+.colorIcon{
+   
+    color:$blue;
+
+    i{
+        font-size: 40px;
+    }
+
+}
+.colorText{
+    color: $blue;
+}
+//***** table
   table{
     width: 100%;
     td{
@@ -101,6 +145,16 @@ max-width: 300%;
     height: 20rem;
  }
 
+ h2{
+    margin-top: 3rem;
+ }
+
+ //*****user
+
+ .userDiv{
+    margin-bottom: 1rem;
+ }
+
 
 
  //*********responsive
@@ -113,14 +167,14 @@ max-width: 300%;
       
         display: grid;
        
-        background-color: gray;
+     
         grid-template-columns: $grid-template-columns;
         margin: 58px 20px 50px;
     
     }
 
     .left_nav{
-        background-color: black;
+      
         color: antiquewhite;
         position: relative;
     }

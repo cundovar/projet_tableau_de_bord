@@ -13,7 +13,10 @@ const Home=()=>{
       };
 
     return(
-    <div className="total">
+        <div>
+            <h2 className="text-center">tableau de bord</h2>
+
+            <div className="total">
             <div className="headerNav">
         <a id="link" href="#">
           <span id="burger1" onClick={toggleMenu}></span>
@@ -28,6 +31,8 @@ const Home=()=>{
 
             <MainTableau/> </div>
 
+        </div>
+  
     
 
     </div>
