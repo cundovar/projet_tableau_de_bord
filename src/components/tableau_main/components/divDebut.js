@@ -7,7 +7,7 @@ const DivDebut = () => {
     <div className="test">
       <div className="div_graph">
         <div className="d-flex justify-content-between contentDebut">
-          <div>
+          <div className="div">
             <div className="colorText text-center">
                 <h3>1005</h3>
             </div>

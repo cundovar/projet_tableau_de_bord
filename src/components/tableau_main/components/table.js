@@ -17,27 +17,29 @@ const Table=()=>{
    },[] )
 
    return (
-    <div className="">
+    <div className="table_container">
         <div>
             <h3>tableau des ventes</h3>
         </div>
+ 
       {donneesPlantes && (
         <table>
           <thead>
             <tr>
-              <th>plante</th>
-              <th>prix</th>
-              <th>paiement</th>
-              <th>livraison</th>
+              <th className="event-plante">plante</th>
+              <th className="event-prix">prix</th>
+              <th className="event-paiement">paiement</th>
+              <th className="event-livraison">livraison</th>
             </tr>
           </thead>
           <tbody>
+
             {donneesPlantes.map((item, index) => (
               <tr key={index}>
-                <td> <p>{item.nom}</p></td>
-                <td><p>{item.prix}€</p></td>
-                <td><p>{item.paiement}</p></td>
-                <td > <p className="colorStatut text-center"
+                <td data-label="nom"> <p>{item.nom}</p></td>
+                <td data-label="prix"><p>{item.prix}€</p></td>
+                <td data-label="paiement"><p>{item.paiement}</p></td>
+                <td data-label="livraison" > <p className="colorStatut "
                 style={
                     item.statut_livraison === "délivré"
                       ? { backgroundColor: "rgb(164, 164, 234)" }
