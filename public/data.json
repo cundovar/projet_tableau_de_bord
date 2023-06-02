@@ -60,9 +60,9 @@
         "labels": ["Jour 1", "Jour 2", "Jour 3", "Jour 4", "Jour 5", "Jour 6", "Jour 7"],
         "datasets": [
           {
-            
+            "labels": "vistes par jours",
             "data": [100, 80, 120, 90, 150, 130, 170],
-            "backgroundColor": "blue",
+            "backgroundColor": "rgb(186, 237, 186)",
             "borderColor": "rgb(241, 148, 148)",
             "pointBackgroundColor": "rgb(254, 254, 154)",
             "pointBorderColor": "rgb(254, 254, 154)",

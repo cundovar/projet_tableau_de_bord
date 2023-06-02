@@ -45,7 +45,28 @@ useEffect(()=>{
 
             <Line
             data={donneesSite.data}
-            options
+            options={{
+                scales:{
+                    x :{
+                        grid:{
+                            color: 'rgb(164, 164, 234)',
+                        }
+                    },
+            
+                    y:{
+                        grid:{
+                            color:'transparent'
+                        }
+                    }
+                },
+                elements:{
+                    point:{
+
+                        backgroundColor:'rgb(186, 237, 186)'
+                    },
+                },
+                backgroundColor:'rgb(186, 237, 186)'
+            }}
             className="chart charts-css line"
           />
             </div>

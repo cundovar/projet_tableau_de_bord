@@ -3,6 +3,7 @@
 h3{
     padding-left: calc(var(--bs-gutter-x) * .5);
     color: $gray;
+    margin-top: .5rem;
 }
 p{
     margin: 0;
@@ -31,6 +32,8 @@ p{
     background-color: antiquewhite;
     margin: 1rem 0.5rem 0 0;
     box-shadow: 8px 9px 12px 4px rgb(179, 184, 189);
+
+
 }
 
 .chart1_2{
@@ -75,6 +78,7 @@ p{
     margin-bottom: 0;
     color: $blue;
     margin-bottom: .5rem;
+  
     
 }
 .test{
@@ -201,13 +205,18 @@ tbody tr td p{
  }
 
  h2{
-    margin-top: 3rem;
+    margin-top: 4rem;
  }
 
  //*****user
 
  .userDiv{
     margin-bottom: 1rem;
+}
+.scroller{
+    overflow:scroll;
+    overflow-x: hidden;
+    max-height: 52rem;
 }
 
 
@@ -311,7 +320,7 @@ tbody tr td p{
       height:100%;
       transition: left .5s ease; 
 
-      position:absolute;
+      position:fixed;
    
    
     
@@ -365,7 +374,7 @@ top:0;
 display: flex;
 color: rgb(222, 50, 50);
 padding: 1rem;
-
+right: 0;
 top: 0;
 
 margin-top: 1.2rem;

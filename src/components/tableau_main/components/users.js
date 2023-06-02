@@ -15,7 +15,7 @@ const Users = () => {
   }, []);
 
   return (
-    <div className="">
+    <div className="scroller">
       <div>
         <h3>Abonnés</h3>
       </div>

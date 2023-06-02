@@ -23,37 +23,67 @@
     {
       "name": "Michael Johnson",
       "country": "United States",
-      "photo": "images/5.jpg"
+      "photo": "https://picsum.photos/200/300"
     },
     {
       "name": "Emma Lee",
       "country": "Canada",
-      "photo": "images/6.jpg"
+      "photo": "https://picsum.photos/200/300"
+    },
+    {
+      "name": "John Doe",
+      "country": "United States",
+      "photo": "images/1.jpg"
+    },
+    {
+      "name": "Alice Smith",
+      "country": "Canada",
+      "photo": "images/2.jpg"
+    },
+    {
+      "name": "Mohammed Rahman",
+      "country": "Bangladesh",
+      "photo": "images/3.jpg"
+    },
+    {
+      "name": "Sophie Martin",
+      "country": "France",
+      "photo": "images/4.jpg"
+    },
+    {
+      "name": "Michael Johnson",
+      "country": "United States",
+      "photo": "https://picsum.photos/200/300"
+    },
+    {
+      "name": "Emma Lee",
+      "country": "Canada",
+      "photo": "https://picsum.photos/200/300"
     },
     {
       "name": "Ahmed Hassan",
       "country": "Egypt",
-      "photo": "images/7.jpg"
+      "photo": "https://picsum.photos/200/300"
     },
     {
       "name": "Maria Lopez",
       "country": "Spain",
-      "photo": "images/8.jpg"
+      "photo": "https://picsum.photos/200/300"
     },
     {
       "name": "Hiroshi Tanaka",
       "country": "Japan",
-      "photo": "images/9.jpg"
+      "photo": "https://picsum.photos/200/300"
     },
     {
       "name": "Isabella Rossi",
       "country": "Italy",
-      "photo": "images/10.jpg"
+      "photo": "https://picsum.photos/200/300"
     },
     {
       "name": "Maxim Petrov",
       "country": "Russia",
-      "photo": "images/11.jpg"
+      "photo": "https://picsum.photos/200/300"
     }
   ]
 }
