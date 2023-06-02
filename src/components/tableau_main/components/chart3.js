@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Chart as ChartJS,
         ArcElement,
         Tooltip,
-        Legend,
+    
         LinearScale,
         CategoryScale,
         PointElement,
@@ -14,7 +14,7 @@ import 'charts.css';
 
 import { Line } from 'react-chartjs-2';
 
-ChartJS.register(ArcElement, Tooltip, Legend,LinearScale,CategoryScale, PointElement,LineElement);
+ChartJS.register( Tooltip,LinearScale, PointElement,LineElement);
 const Chart3=()=>{
 
 const [donneesSite,setDonneesSite]=useState(null)

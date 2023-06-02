@@ -12,9 +12,9 @@ const LeftNav = () => {
   ];
   const nav = nav_items.map((icon) => {
     return (
-      <div className="text-center">
-        <div key={icon.id}>
-          <i className={`text-center icon iconBar ${icon.icon}`}></i>
+      <div className="text-center ">
+        <div className="iconBar" key={icon.id}>
+          <i className={`text-center icon  ${icon.icon}`}></i>
         </div>
       </div>
     );
@@ -24,7 +24,7 @@ const LeftNav = () => {
     
       
 
-      <div className>{nav}</div>
+      <div className="fixBar">{nav}</div>
     
   );
 };

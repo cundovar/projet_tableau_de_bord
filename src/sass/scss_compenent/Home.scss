@@ -166,6 +166,7 @@ tbody tr td p{
 @media screen and (max-width:800px) {
     .tableUser{
         width: 98%;
+        margin-left: 0.1rem;
     }
 
     table thead{
@@ -249,6 +250,7 @@ tbody tr td p{
 
     .total{
         display: flex;
+        position: relative;
     }
     .tableau_main{
         width: 100%;
@@ -297,16 +299,19 @@ tbody tr td p{
    
   
   }
+  .fixBar{
+    position: fixed;
+  }
 
 .left_nav{
    visibility: hidden;
     
          left: -150px;
         
-      
+      height:100%;
       transition: left .5s ease; 
 
-      position:fixed;
+      position:absolute;
    
    
     

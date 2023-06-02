@@ -60,14 +60,14 @@
         "labels": ["Jour 1", "Jour 2", "Jour 3", "Jour 4", "Jour 5", "Jour 6", "Jour 7"],
         "datasets": [
           {
-            "label": "Visites",
+            
             "data": [100, 80, 120, 90, 150, 130, 170],
             "backgroundColor": "blue",
-            "borderColor": "black",
-            "pointBackgroundColor": "yellow",
-            "pointBorderColor": "red",
-            "pointHoverBackgroundColor": "#fff",
-            "pointHoverBorderColor": "green",
+            "borderColor": "rgb(241, 148, 148)",
+            "pointBackgroundColor": "rgb(254, 254, 154)",
+            "pointBorderColor": "rgb(254, 254, 154)",
+         
+            
             "fill":true,
             "tension":0.5
           }

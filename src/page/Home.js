@@ -23,7 +23,7 @@ const Home=()=>{
         </a>
       </div>
 
-        <div className="left_nav" id="menuContent" >
+        <div className="left_nav " id="menuContent" >
             <LeftNav/> </div>
       
         <div className="tableau_main">
