@@ -7,11 +7,7 @@ $yellow: rgb(254, 254, 154);
 $red: rgb(241, 148, 148) ;
 $green: rgb(186, 237, 186); 
 $gray: rgb(134, 111, 111);
+$ff:black;
 
-:export {
-    blue:$blue;
-    yellow:$yellow;
-    red:$red;
-    green:$green;
-    gray: $gray
-}
+$media: "screen and (max-width:800px) ";
+

@@ -1,10 +1,8 @@
 @charset "UTF-8";
-:export {
-  blue: rgb(164, 164, 234);
-  yellow: rgb(254, 254, 154);
-  red: rgb(241, 148, 148);
-  green: rgb(186, 237, 186);
-  gray: rgb(134, 111, 111);
+.chart-container, .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h3 {
@@ -49,9 +47,6 @@ p {
   height: 50px;
   border-radius: 50%;
   border: 1px black solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 
@@ -62,12 +57,15 @@ p {
 
 .chart-container {
   max-height: 100%; /* Limite la hauteur maximale à 100% */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .chart-container canvas {
   width: 100%;
+}
+
+.div {
+  border: 1px solid green;
+  width: 100%;
+  @ext;
 }
 
 .div h3 {
@@ -82,7 +80,7 @@ p {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width:800px) {
   .test {
     display: flex;
     flex-direction: column;
@@ -338,14 +336,6 @@ h2 {
     position: relative;
   }
 }
-:export {
-  blue: rgb(164, 164, 234);
-  yellow: rgb(254, 254, 154);
-  red: rgb(241, 148, 148);
-  green: rgb(186, 237, 186);
-  gray: rgb(134, 111, 111);
-}
-
 .left_nav {
   background-color: rgb(164, 164, 234);
   color: antiquewhite;
@@ -402,6 +392,7 @@ h2 {
 * {
   margin: 0;
   box-sizing: border-box;
+  border: 1px yellow solid;
 }
 
 /*# sourceMappingURL=App.css.map */

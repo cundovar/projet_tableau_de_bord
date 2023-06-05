@@ -1,5 +1,11 @@
 @import './variable.scss';
 
+
+%displayf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 h3{
     padding-left: calc(var(--bs-gutter-x) * .5);
     color: $gray;
@@ -45,9 +51,7 @@ p{
     height: 50px;
     border-radius: 50%;
     border: 1px black solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayf;
     overflow: hidden;
 }
 
@@ -61,9 +65,7 @@ p{
 
     max-height: 100%; /* Limite la hauteur maximale à 100% */
   
-    display: flex;
-    align-items: center;
-    justify-content:center ;
+   @extend %displayf;
     canvas{
         width: 100%;
     }
@@ -73,6 +75,7 @@ p{
 
 
 //********divDebut
+
 .div h3{
     margin-left: 0;
     margin-bottom: 0;
@@ -87,7 +90,7 @@ p{
 
 
 }
-@media screen and (max-width:800px) {
+@media #{$media}{
     .test{
         display: flex;
         flex-direction: column;
@@ -96,11 +99,27 @@ p{
             width: 95%;
         }
     }
-    .contentDebut{
+    .div{
+
+     
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+
+    .contentDebut{
+      display: flex;
+        flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .colorNumber,.colorText{
+        height: 50%;
+    width: 100%;
+    @extend %displayf;
     }
     
 }
@@ -112,6 +131,7 @@ p{
 }
 .colorText,.colorNumber{
     height: 50%;
+
 }
 .colorIcon{
    
@@ -145,10 +165,7 @@ p{
 max-width: 300%;
  }
 
- .margin_fix{
-   
-   
-}
+
 .carto{
     width: 100%;
     position: relative;
