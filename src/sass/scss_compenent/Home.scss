@@ -7,6 +7,7 @@
     align-items: center;
 }
 h3{
+    
     padding-left: calc(var(--bs-gutter-x) * .5);
     color: $gray;
     margin-top: .5rem;
@@ -119,7 +120,10 @@ p{
     .colorNumber,.colorText{
         height: 50%;
     width: 100%;
-    @extend %displayf;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
     }
     
 }

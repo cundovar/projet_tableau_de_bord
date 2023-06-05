@@ -62,12 +62,6 @@ p {
   width: 100%;
 }
 
-.div {
-  border: 1px solid green;
-  width: 100%;
-  @ext;
-}
-
 .div h3 {
   margin-left: 0;
   margin-bottom: 0;
@@ -88,11 +82,26 @@ p {
   .test .div_graph {
     width: 95%;
   }
+  .div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .contentDebut {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .colorNumber, .colorText {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .contentDebut {
@@ -392,7 +401,6 @@ h2 {
 * {
   margin: 0;
   box-sizing: border-box;
-  border: 1px yellow solid;
 }
 
 /*# sourceMappingURL=App.css.map */
