@@ -20,7 +20,7 @@ const ChartComponent = () => {
       {
         label:  'retour mensuel',
         data:  [1,2,3,4],
-        
+       
         backgroundColor: 'rgb(241, 148, 148',
         
         borderColor: 'rgba(75, 192, 192, 1)',
@@ -41,7 +41,7 @@ const ChartComponent = () => {
   return (
     <div className='' >
       <h3>graphique</h3>
-      <Bar data={data} options={options} />
+      <Bar data={data} options={options} height={100}  />
     </div>
   );
 };

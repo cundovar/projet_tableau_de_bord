@@ -47,7 +47,7 @@ const Chart2=()=>{
     <div className="">
         <h3>graphique 2</h3>
         <div className="chart-container">
-      {  donneesProduction ? <Doughnut data={donneesProduction} options={options} className=""/> : null }
+      {  donneesProduction ? <Doughnut data={donneesProduction} options={options} height={100}  className=""/> : null }
 
         </div>
     
